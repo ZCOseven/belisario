@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/general/logo-belisario.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./assets/css/variables.css">
+    <link rel="stylesheet" href="./assets/css/globales.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+
+    <title>Carta</title>
+
+
+</head>
+
+<body>
+    <style>
+        .c-header {
+            box-shadow: none;
+        }
+
+        .c-categorias {
+            background-color: #FFF;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: center;
+            padding-block: 8px;
+            box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
+            border-top: 1px solid #000;
+
+            position: sticky;
+            top: 6rem;
+        }
+
+        .c-categorias a {
+            padding: 3px 30px;
+            background-color: var(--color-primario);
+            border-radius: 10px;
+            color: #FFF;
+            font-size: var(--fuente-subtitulo);
+        }
+
+        .c-contenido-general {
+            padding-block: 2rem;
+            padding-inline: 4rem;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .c-contenido-general-carta {
+            background-color: var(--color-secundario);
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        .c-padre-categorias {}
+
+        .c-padre-categorias h2 {
+            font-size: var(--fuente-titulo);
+            margin-bottom: 8px;
+        }
+
+        .c-tarjetas-categorias {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+        }
+
+        .tarjeta-producto {
+            /* border: 0.5px solid #000; */
+            border-radius: 10px;
+            width: 400px;
+            /*borrar luego*/
+            padding: 1rem;
+            display: flex;
+            gap: 3rem;
+            transition: all 0.3s ease-in;
+            box-shadow: 0px 3px 5px rgb(0, 0, 0, 0.25);
+        }
+
+        .tarjeta-producto:hover {
+            box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.25);
+        }
+
+        .tarjeta-c-img {
+            width: 50%;
+        }
+
+
+        .tarjeta-c-img img {
+            width: 100%;
+
+        }
+
+        .tarjeta-c-info {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .tarjeta-c-info>div {
+            width: 100%;
+        }
+
+        .tarjeta-c-info h3 {
+            font-size: var(--fuente-subtitulo);
+        }
+
+        .tarjeta-c-info P {
+            font-size: var(--fuente-texto);
+        }
+
+        .c-precio-btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .btn-add {
+            background-color: var(--color-primario);
+            font-size: var(--fuente-titulo);
+            border: none;
+            border-radius: 50%;
+            color: #FFF;
+            width: 2.5rem;
+            height: 2.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .btn-add:hover {
+            transform: scale(1.1);
+            box-shadow: 2px 3px 3px #e5133a8d;
+        }
+    </style>
+    <main>
+        <!-- btns categorias -->
+        <nav class="c-categorias">
+            <a href="#promociones">Promociones</a>
+            <a href="#clasicos">Clasicos</a>
+            <a href="#acompañamiento">Acompañamiento</a>
+            <a href="#piqueos">Piqueos</a>
+            <a href="#bebidas">Bebidas</a>
+        </nav>
+
+        <!-- Promociones -->
+        <section class="c-contenido-general c-contenido-general-carta">
+            <article class="c-padre-categorias" id="promociones">
+                <h2>Promociones</h2>
+                <div class="c-tarjetas-categorias" id="categoria-promociones">
+                    <!-- tarjetas de promociones -->
+                </div>
+            </article>
+
+            <article class="c-padre-categorias" id="clasicos">
+                <h2>Clasicos</h2>
+                <div class="c-tarjetas-categorias" id="categoria-clasicos">
+                    <!-- tarjetas de clasicas -->
+                </div>
+            </article>
+
+            <article class="c-padre-categorias" id="acompañamiento">
+                <h2>Acompañamiento</h2>
+                <div class="c-tarjetas-categorias" id="categoria-acompañamiento">
+                    <!-- tarjetas de acompañamiento -->
+                </div>
+            </article>
+
+            <article class="c-padre-categorias" id="piqueos">
+                <h2>Piqueos</h2>
+                <div class="c-tarjetas-categorias" id="categoria-piqueos">
+                    <!-- tarjetas de piqueos -->
+                </div>
+            </article>
+
+            <article class="c-padre-categorias" id="bebidas">
+                <h2>Bebidas</h2>
+                <div class="c-tarjetas-categorias" id="categoria-bebidas">
+                    <!-- tarjetas de bebidas -->
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+
+    <script>
+        function btnAdd() {
+            console.log("logica para añadir el producto al carrito con LocalStorage, proximamente. . .");
+        }
+    </script>
+
+    <!-- Componentes -->
+    <script type="module" src="./assets/js/renderHeader.js"></script>
+    <script type="module" src="./assets/js/renderFooter.js"></script>
+
+    <script src="./assets/js/renderProductos.js" type="module"></script>
+</body>
+
+</html>

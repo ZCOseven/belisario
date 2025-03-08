@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/general/logo-belisario.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./assets/css/variables.css">
+    <link rel="stylesheet" href="./assets/css/globales.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <title>Inicio</title>
+</head>
+
+<body>
+    <main>
+        <!-- Banner de promociones -->
+        <section class="c-banner">
+            <div class="c-carrusel">
+                <div class="c-carrusel-imagenes">
+                    <img src="./assets/img/index/banner-beli-1.jpg" alt="img-banner">
+                    <img src="./assets/img/index/banner-beli-2.jpg" alt="img-banner">
+                    <img src="./assets/img/index/banner-beli-3.jpg" alt="img-banner">
+                    <img src="./assets/img/index/banner-beli-4.jpg" alt="img-banner">
+                </div>
+                <div onclick="btnPrev()" class="c-btn-prev">
+                    <img src="./assets/img/index/arrow.png" alt="">
+                </div>
+                <div onclick="btnNext()" class="c-btn-nex">
+                    <img src="./assets/img/index/arrow.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Componentes -->
+    <script type="module" src="./assets/js/renderHeader.js"></script>
+    <script type="module" src="./assets/js/renderFooter.js"></script>
+
+    <!-- Otros -->
+     <script src="./assets/js/carrusel.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+:root {
+
+    /* Colores */
+    --color-primario: #E5133A;
+    --color-secundario: #F4F4F4;
+    --color-terciario: #000000;
+
+    /* Tamaño de fuente */
+    --fuente-titulo: 1.25rem;
+    --fuente-subtitulo:  0.9375rem;
+    --fuente-texto: 0.75rem;
+    --fuente-texto-pequeño: 0.625rem;
+
+    
+    --text-header: #000000;
+    --bg-header: #FFFFFF;
+
+    --text-footer: #000000;
+    --bg-footer: #FFFFFF;
+}
