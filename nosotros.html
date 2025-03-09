@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/general/logo-belisario.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./assets/css/variables.css">
+    <link rel="stylesheet" href="./assets/css/globales.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+
+    <!-- Links Propios -->
+
+
+    <title>Nosotros</title>
+</head>
+
+<style>
+    .c-principal-nosotros {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+
+        padding-inline: 15rem;
+        padding-block: 5rem;
+    }
+
+    .c-historia,
+    .c-filosofia,
+    .c-especialidad {
+        width: 100%;
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .c-img {
+        flex: 1;
+    }
+
+    .c-img img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .c-informacion {
+        flex: 1;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .c-informacion h2 {
+        font-size: var(--fuente-titulo);
+        text-align: center;
+    }
+
+    .c-informacion p {
+        font-size: var(--fuente-texto);
+        text-align: justify;
+    }
+
+    .etiquetas {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 10px 55px;
+        justify-content: center;
+    }
+
+    .etiquetas div {
+        background-color: var(--color-primario);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        padding: 2px 8px;
+        gap: 5px;
+        font-size: var(--fuente-texto-pequeño);
+        color: var(--text-white);
+    }
+
+    .etiquetas div>img {
+        width: 15px;
+        height: 15px;
+    }
+</style>
+
+<body>
+    <main class="c-principal-nosotros">
+
+        <section class="c-historia">
+            <div class="c-img">
+                <img src="./assets/img/nosotros/historia.jpg" alt="imagen-historia">
+            </div>
+            <div class="c-informacion">
+                <h2>Historia y Origen</h2>
+                <p>En el corazón de un pequeño barrio, allá por el año 1985, nació la receta que cambiaría la forma de
+                    disfrutar un buen pollo a la brasa. Don Belisario, un apasionado cocinero con raíces peruanas, pasó
+                    años perfeccionando el aderezo perfecto y el punto exacto de cocción para lograr un pollo jugoso por
+                    dentro y crujiente por fuera. Con un pequeño local y un horno de carbón, Don Belisario abrió su
+                    primera pollería, conquistando a sus vecinos con el aroma irresistible de su especialidad. Lo que
+                    comenzó como un sueño se convirtió en una tradición familiar, manteniendo intacta la receta original
+                    y transmitiéndola de generación en generación. Hoy en día, Pollería Don Belisario sigue fiel a su
+                    legado: ofrecer un pollo a la brasa de calidad, con ese sabor casero que nos hace sentir como en
+                    casa.</p>
+            </div>
+        </section>
+
+        <section class="c-filosofia">
+            <div class="c-informacion">
+                <h2>Nuestra Filosofía</h2>
+                <p>En Don Belisario, creemos que un buen pollo a la brasa no solo es cuestión de sabor, sino de pasión,
+                    tradición y calidad. Desde nuestros inicios, nos hemos guiado por valores fundamentales que hacen
+                    que cada visita a nuestra pollería sea más que una comida: una experiencia auténtica y memorable.
+                </p>
+                <div class="etiquetas">
+                    <div><img src="./assets/img/nosotros/pierna-pollo.png" alt="logo">Pasión por el sabor</div>
+                    <div><img src="./assets/img/nosotros/fuego.png" alt="logo">Tradición que une generaciones</div>
+                    <div><img src="./assets/img/nosotros/medalla.png" alt="logo">Compromiso con la excelencia</div>
+                </div>
+            </div>
+            <div class="c-img">
+                <img src="./assets/img/nosotros/filosofia.jpg" alt="imagen-historia">
+            </div>
+        </section>
+
+        <section class="c-especialidad">
+            <div class="c-img">
+                <img src="./assets/img/nosotros/especialidad.jpg" alt="imagen-historia">
+            </div>
+            <div class="c-informacion">
+                <h2>Nuestra Especialidad</h2>
+                <p>En Don Belisario, sabemos que un buen pollo a la brasa es una obra de arte, y por eso nos especializamos en:</p>
+
+                <style>
+                    .listado{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        padding-block: 10px;
+                    }
+                    .listado>div{
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        padding: 2px 0px;
+                        font-size: var(--fuente-texto-pequeño);
+                    }
+                </style>
+                <div class="listado">
+                    <div><img src="./assets/img/nosotros/aprovado.png" alt="check"> Pollo a la brasa con marinado especial de especias y hierbas secretas.</div>
+                    <div><img src="./assets/img/nosotros/aprovado.png" alt="check"> Piel dorada y crocante, gracias a nuestra técnica de cocción lenta.</div>
+                    <div><img src="./assets/img/nosotros/aprovado.png" alt="check"> Jugosidad incomparable, porque seleccionamos los mejores ingredientes.</div>
+                    <div><img src="./assets/img/nosotros/aprovado.png" alt="check"> Acompañamientos perfectos, desde papas doradas hasta ensaladas frescas.</div>
+                </div>
+                <p>Cada plato es preparado con el mismo cariño con el que Don Belisario lo hacía hace décadas, para que cada bocado sea una experiencia inolvidable.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Componentes -->
+    <script type="module" src="./assets/js/renderHeader.js"></script>
+    <script type="module" src="./assets/js/renderFooter.js"></script>
+</body>
+
+</html>
