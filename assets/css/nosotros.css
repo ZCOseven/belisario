@@ -1,0 +1,84 @@
+
+.c-principal-nosotros {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+    padding-inline: 15rem;
+    padding-block: 5rem;
+}
+
+.c-historia,
+.c-filosofia,
+.c-especialidad {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.c-img {
+    flex: 1;
+}
+
+.c-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.c-informacion {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.c-informacion h2 {
+    font-size: var(--fuente-titulo);
+    text-align: center;
+}
+
+.c-informacion p {
+    font-size: var(--fuente-texto);
+    text-align: justify;
+}
+
+.etiquetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px 55px;
+    justify-content: center;
+}
+
+.etiquetas div {
+    background-color: var(--color-primario);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 2px 8px;
+    gap: 5px;
+    font-size: var(--fuente-texto-pequeño);
+    color: var(--text-white);
+}
+
+.etiquetas div>img {
+    width: 15px;
+    height: 15px;
+}
+
+.listado {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-block: 10px;
+}
+
+.listado>div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 2px 0px;
+    font-size: var(--fuente-texto-pequeño);
+}
