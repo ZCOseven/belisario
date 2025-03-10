@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/general/logo-belisario.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./assets/css/variables.css">
+    <link rel="stylesheet" href="./assets/css/globales.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+
+    <title>Contactos</title>
+</head>
+
+<style>
+    .c-banner {
+        width: 100%;
+    }
+
+    .c-banner img {
+        height: 30rem;
+        width: 100%;
+        object-fit: cover;
+        object-position: bottom;
+    }
+
+    .c-principal-locales {
+        padding-inline: 15rem;
+        padding-block: 5rem;
+    }
+
+    .c-formulario-contactos {
+        display: flex;
+        gap: 30px;
+        padding-block: 30px;
+        box-shadow: 0px 2px 10px #00000056;
+    }
+
+    .c-formulario {
+        flex: 1;
+        padding: 21px 31px;
+    }
+
+    .c-formulario h2 {
+        margin-bottom: 10px;
+        font-size: var(--fuente-titulo);
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    form>div {
+        width: 100%;
+    }
+
+    form>div>label {
+        font-size: var(--fuente-texto);
+    }
+
+    form>div>input {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #F6F7FA;
+        background-color: #F6F7FA;
+        padding: 10px;
+        outline: none;
+
+        font-family: "Poppins", serif;
+    }
+
+    form textarea {
+        width: 100%;
+        height: 80px;
+        resize: vertical;
+        border: 1px solid #F6F7FA;
+        background-color: #F6F7FA;
+        padding: 10px;
+        outline: none;
+
+        font-family: "Poppins", serif;
+    }
+
+    form textarea:focus,
+    form input:focus {
+        border: 1px solid #F6F7FA;
+        /* Borde cuando se selecciona */
+    }
+
+
+    form span {
+        color: red;
+    }
+
+    form button[type="submit"] {
+        margin-top: 1rem;
+        border: 1px solid var(--color-primario);
+        font-size: var(--fuente-texto);
+        width: 283px;
+        height: 32px;
+        border-radius: 5px;
+        background-color: #FFFFFF;
+
+        font-family: "Poppins", serif;
+    }
+
+    .c-btn-submit {
+        text-align: center;
+    }
+
+    .c-contactos {
+        flex: 1;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .c-contactos>div {
+        gap: 5px;
+    }
+
+    .c-contactos>div>p {
+        font-size: var(--fuente-subtitulo);
+    }
+
+    .c-contactos a {
+        display: inline-block;
+        color: var(--color-primario);
+    }
+
+    .c-contactos h2 {
+        color: var(--color-primario);
+        font-size: var(--fuente-titulo);
+    }
+
+    .c-icono-titulo {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .c-icono-titulo img {
+        width: 25px;
+        height: 25px;
+    }
+
+    ::placeholder {
+        font-family: "Poppins", serif;
+    }
+
+    @media screen and (max-width: 1024px) {
+        .c-principal-locales {
+            padding-inline: 5rem;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .c-formulario-contactos {
+            flex-direction: column;
+        }
+
+        .c-formulario-contactos {
+            box-shadow: none;
+        }
+
+        .c-formulario {
+            padding: 0px;
+        }
+    }
+</style>
+
+<body>
+    <main>
+        <section class="c-banner">
+            <img src="./assets/img/contactos/banner-contactos.jpg" alt="banner-belisario">
+        </section>
+
+        <section class="c-principal-locales">
+            <div class="c-formulario-contactos">
+
+                <div class="c-formulario">
+                    <h2>Déjanos tu consulta</h2>
+                    <form action="#">
+                        <div>
+                            <label for="name">Nombre completo <span>*</span></label>
+                            <input type="text" id="name" required>
+                        </div>
+
+                        <div>
+                            <label for="email">Correo Electrónico <span>*</span></label>
+                            <input type="email" id="email" required>
+                        </div>
+
+                        <div>
+                            <label for="asunto">Asunto o Motivo de Contacto <span>*</span></label>
+                            <input type="text" id="asunto" required>
+                        </div>
+
+                        <div>
+                            <label for="message">Mensaje <span>*</span></label>
+                            <textarea id="message" required></textarea>
+                        </div>
+
+                        <div class="c-btn-submit">
+                            <button type="submit">Enviar Mensaje</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="c-contactos">
+                    <div>
+                        <div class="c-icono-titulo">
+                            <img src="./assets/img/contactos/icon-asesor.png" alt="icono-contacto">
+                            <h2>Telefonos:</h2>
+                        </div>
+                        <p>+51 999 111 222</p>
+                        <p>+51 988 333 444</p>
+                        <p>+51 977 555 666</p>
+                    </div>
+                    <div>
+                        <div class="c-icono-titulo">
+                            <img src="./assets/img/contactos/icon-email.png" alt="icono-contacto">
+                            <h2>Correo:</h2>
+                        </div>
+                        <p>contacto@donbelisario.com</p>
+                    </div>
+                    <div>
+                        <div class="c-icono-titulo">
+                            <img src="./assets/img/contactos/icon-horario.png" alt="icono-contacto">
+                            <h2>Horario de atención:</h2>
+                        </div>
+                        <p>Lunes a Viernes: 9AM-6PM</p>
+                        <p>Sábados: 10AM-2PM</p>
+                    </div>
+                    <div>
+                        <div class="c-icono-titulo">
+                            <img src="./assets/img/contactos/icon-redes.png" alt="icono-contacto">
+                            <h2>Redes sociales:</h2>
+                        </div>
+                        <p>Facebook: <a href="#">facebook.com/DonBelisarioOficial</a></p>
+                        <p>Instagram: <a href="#">instagram.com/DonBelisarioPeru</a></p>
+                        <p>Twitter (X): <a href="#">twitter.com/DonBelisario_PE</a></p>
+                        <p>TikTok: <a href="#">tiktok.com/@DonBelisario</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Componentes -->
+    <script type="module" src="./assets/js/renderHeader.js"></script>
+    <script type="module" src="./assets/js/renderFooter.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+
+.c-principal-inicio-sesion {
+    height: calc(100vh - 6rem);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+}
+
+.c-formulario {
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-iniciar {
+    margin-top: 20px;
+    width: 100%;
+    padding-block: 10px;
+    font-family: "Poppins", serif;
+    background-color: var(--color-primario);
+    border-radius: 5px;
+    border: 1px solid var(--color-primario);
+    color: #FFFFFF;
+    font-size: var(--fuente-subtitulo);
+}
+
+.c-o {
+    width: 100%;
+    text-align: center;
+}
+
+.btn-google {
+    display: flex;
+    align-items: center;
+    font-size: var(--fuente-subtitulo);
+    width: 100%;
+    background-color: #FFFFFF;
+    border: 1px solid var(--color-primario);
+    border-radius: 5px;
+    padding-block: 10px;
+    justify-content: center;
+    gap: 5px;
+    color: var(--color-primario);
+    font-family: "Poppins", serif;
+}
+
+.btn-google img {
+    width: 22.5px;
+    height: 25px;
+}
+
+.c-texto-registro {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-size: var(--fuente-subtitulo);
+}
+
+.c-texto-registro a {
+    color: var(--color-primario);
+    text-decoration: underline;
+    display: inline-block;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form span {
+    color: red;
+}
+
+.c-grupo-input {
+    width: 100%;
+
+}
+
+.c-grupo-input input {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #F6F7FA;
+    background-color: #F6F7FA;
+    padding: 10px;
+    outline: none;
+
+    font-family: "Poppins", serif;
+}
+
+.c-grupo-input label {
+    font-size: var(--fuente-subtitulo);
+}
+
+.c-titulo-formulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.c-titulo-formulario h2 {
+    font-size: var(--fuente-titulo);
+}
+
+@media screen and (max-width: 425px) {
+    form {
+        padding-inline: 30px;
+    }
+}

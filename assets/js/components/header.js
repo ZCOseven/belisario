@@ -40,13 +40,13 @@ export function headerComponent() {
         </div>
 
         <div class="c-header-otros-enlaces">
-            <a href="#1">
+            <a href="inicio-sesion.html">
                 <div class="item-enlaces">
                     <img title="Iniciar Sesión" src="assets/img/general/usser.png" alt="icon-header">
                     <p>Iniciar Sesión</p>
                 </div>
             </a>
-            <a href="#2">
+            <a href="contactos.html">
                 <div class="item-enlaces">
                     <img title="telefono" src="assets/img/general/phone.png" alt="icon-header">
                     <p>01 - 600 - 2025</p>

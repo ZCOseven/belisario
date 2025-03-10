@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/general/logo-belisario.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./assets/css/variables.css">
+    <link rel="stylesheet" href="./assets/css/globales.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+
+    <link rel="stylesheet" href="./assets/css/inicio-sesion.css">
+
+    <title>Inicio de Sesión</title>
+</head>
+
+<body>
+    <main class="c-principal-inicio-sesion">
+        <div class="c-formulario">
+            <form action="#">
+                <div class="c-titulo-formulario">
+                    <h2>Iniciar sesión</h2>
+                    <p>Te damos la bienvenida</p>
+                </div>
+                <div class="c-grupo-input">
+                    <label for="correo">Correo electrónico <span>*</span></label>
+                    <input type="email" id="correo" required>
+                </div>
+
+                <div class="c-grupo-input">
+                    <label for="contraseña">Contraseña <span>*</span></label>
+                    <input type="password" id="contraseña" required>
+                </div>
+
+                <button class="btn-iniciar" type="submit">Iniciar sesión</button>
+
+                <div class="c-o">
+                    <p>o</p>
+                </div>
+
+                <button class="btn-google"> <img src="./assets/img/inicio_sesion/icono-google.png" alt="icono-google">
+                    Continuar con
+                    Google</button>
+
+                <div class="c-texto-registro">
+                    <p>¿Necesitas un cuenta? <a href="registro.html">Registrarme</a></p>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Componentes -->
+    <script type="module" src="./assets/js/renderHeader.js"></script>
+    <!-- <script type="module" src="./assets/js/renderFooter.js"></script> -->
+</body>
+
+</html>

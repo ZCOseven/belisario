@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/general/logo-belisario.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./assets/css/variables.css">
+    <link rel="stylesheet" href="./assets/css/globales.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+
+    <link rel="stylesheet" href="./assets/css/registro.css">
+
+    <title>Registrarme</title>
+</head>
+
+<body>
+    <main class="c-principal-registro">
+        <div class="c-text-formulario">
+            <div class="c-texto">
+                <h2>Sé parte de la familia Don Belisario y accede a beneficios exclusivos.</h2>
+                <div><img src="./assets/img/registro/aprovado.png" alt="icono-aproved"> Descuentos especiales solo para
+                    miembros.</div>
+                <div><img src="./assets/img/registro/aprovado.png" alt="icono-aproved"> Guarda tus pedidos favoritos y
+                    ordénalos más rápido.</div>
+                <div><img src="./assets/img/registro/aprovado.png" alt="icono-aproved"> Acumula puntos "Beli" y
+                    canjéalos por productos.</div>
+                <div><img src="./assets/img/registro/aprovado.png" alt="icono-aproved"> Sé el primero en conocer ofertas
+                    y novedades.</div>
+            </div>
+            <div class="c-formulario">
+                <form action="#">
+                    <div class="c-nombre-apellido">
+                        <div class="c-grupo-input">
+                            <label for="nombre">Nombres <span>*</span></label>
+                            <input type="text" id="nombre" required>
+                        </div>
+
+                        <div class="c-grupo-input">
+                            <label for="apellidos">Apellidos <span>*</span></label>
+                            <input type="text" id="apellidos" required>
+                        </div>
+                    </div>
+
+                    <div class="c-grupo-input">
+                        <label for="correo">Correo electrónico <span>*</span></label>
+                        <input type="email" id="correo" required>
+                    </div>
+
+                    <div class="c-grupo-input">
+                        <label for="contraseña">Contraseña <span>*</span></label>
+                        <input type="password" id="contraseña" required>
+                    </div>
+
+                    <div class="c-grupo-input">
+                        <label for="contraseña2">Repetir Contraseña <span>*</span></label>
+                        <input type="password" id="contraseña2" required>
+                    </div>
+
+                    <button class="btn-unirme" type="submit">Unirme</button>
+                    <p>¿Ya tienes una cuenta?  <a href="inicio-sesion.html">Inicia Sesión</a></p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Componentes -->
+    <script type="module" src="./assets/js/renderHeader.js"></script>
+    <!-- <script type="module" src="./assets/js/renderFooter.js"></script> -->
+</body>
+
+</html>

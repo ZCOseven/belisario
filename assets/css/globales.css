@@ -6,13 +6,15 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family: "Poppins", serif;
+html {
+    scroll-behavior: smooth;
 }
+
 
 body {
     display: flex;
     flex-direction: column;
+    font-family: "Poppins", serif;
 }
 
 main {
@@ -21,7 +23,8 @@ main {
 
 img,
 a,
-label {
+label,
+textarea {
     display: block;
 }
 
