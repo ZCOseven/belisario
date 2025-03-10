@@ -104,4 +104,7 @@
     padding-inline: 3rem;
     padding-block: 2rem;
   }
+  .etiquetas {
+    padding: 10px 0px;
+  }
 }

@@ -18,3 +18,8 @@ function btnNext() {
   indiceImg = (indiceImg + 1) % totalImages;
   monstrarBanner(indiceImg);
 }
+
+
+function goCarta(){
+  window.location.href = "carta.html";
+}
