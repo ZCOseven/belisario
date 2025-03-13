@@ -1,5 +1,6 @@
 function tarjetaProductos(dataProductos) {
     let { nombre, descripcion, precio, link_img } = dataProductos;
+
     let html = `
         <div class="tarjeta-producto">
             <div class="tarjeta-c-img">
@@ -12,7 +13,14 @@ function tarjetaProductos(dataProductos) {
                 </div>
                 <div class="c-precio-btn">
                     <span>S/${precio}</span>
-                    <button onclick="btnAdd()" class="btn-add">+</button>
+                    <button 
+                        class="btn-add"
+                        data-nombre="${nombre}" 
+                        data-descripcion="${descripcion}" 
+                        data-precio="${precio}" 
+                        data-link_img="${link_img}"
+                        onclick="agregarAlCarrito(this)"
+                    >+</button>
                 </div>
             </div>
         </div>
@@ -21,4 +29,4 @@ function tarjetaProductos(dataProductos) {
     return html;
 }
 
-export {tarjetaProductos};
+export { tarjetaProductos };

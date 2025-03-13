@@ -52,7 +52,7 @@ export function headerComponent() {
                     <p>01 - 600 - 2025</p>
                 </div>
             </a>
-            <a href="#3">
+            <a href="#3" id="open-cart" onclick="abrirCarrito()">
                 <div class="item-enlaces">
                     <img title="carrito de compras" src="assets/img/general/car.png" alt="icon-header">
                     <span>S/0.00</span>

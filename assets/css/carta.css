@@ -62,6 +62,11 @@
 .c-padre-categorias {
     padding-top: 10rem;
     margin-top: -10rem;
+    pointer-events: none;
+}
+
+.c-padre-categorias > *{
+    pointer-events: auto;
 }
 
 .c-padre-categorias h2 {
