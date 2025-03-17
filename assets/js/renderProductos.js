@@ -19,8 +19,8 @@ function renderProductos(categoria, sectionId) {
 
 
     section.innerHTML = "";
-    productos.forEach(producto => {
-        const tarjetaHTML = tarjetaProductos(producto);
+    productos.forEach((producto, index) => {
+        const tarjetaHTML = tarjetaProductos(producto, index); //pasamos el indice como identificador
         section.insertAdjacentHTML("beforeend", tarjetaHTML);
     });
 }

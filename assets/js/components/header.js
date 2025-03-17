@@ -55,7 +55,7 @@ export function headerComponent() {
             <a href="#3" id="open-cart" onclick="abrirCarrito()">
                 <div class="item-enlaces">
                     <img title="carrito de compras" src="assets/img/general/car.png" alt="icon-header">
-                    <span>S/0.00</span>
+                    <span class="precio-dinamico">S/00.00</span>
                 </div>
             </a>
         </div>    

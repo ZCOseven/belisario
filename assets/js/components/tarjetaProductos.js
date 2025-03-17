@@ -1,4 +1,4 @@
-function tarjetaProductos(dataProductos) {
+function tarjetaProductos(dataProductos, identificador) {
     let { nombre, descripcion, precio, link_img } = dataProductos;
 
     let html = `
@@ -15,11 +15,12 @@ function tarjetaProductos(dataProductos) {
                     <span>S/${precio}</span>
                     <button 
                         class="btn-add"
+                        data-id="${identificador}" 
                         data-nombre="${nombre}" 
                         data-descripcion="${descripcion}" 
                         data-precio="${precio}" 
                         data-link_img="${link_img}"
-                        onclick="agregarAlCarrito(this)"
+                        onclick="agregarProducto(this)"
                     >+</button>
                 </div>
             </div>

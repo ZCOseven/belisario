@@ -10,11 +10,10 @@
     <link rel="stylesheet" href="./assets/css/globales.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
-
     <link rel="stylesheet" href="./assets/css/carta.css">
+    <script src="https://kit.fontawesome.com/1bd90eafaa.js" crossorigin="anonymous"></script>
 
     <title>Carta</title>
-
 </head>
 
 <body>
@@ -64,69 +63,7 @@
                     <!-- tarjetas de bebidas -->
                 </div>
             </article>
-
         </section>
-
-        <style>
-            .overlay {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: rgba(0, 0, 0, 0.35);
-                z-index: 4;
-                visibility: hidden;
-                opacity: 0;
-                transition: opacity 0.45s ease-out, visibility 0.45s ease-out;
-            }
-
-            .overlay--aparecer {
-                visibility: visible;
-                opacity: 1;
-            }
-
-            .c-carrito {
-                position: fixed;
-                top: 0;
-                right: -100%;
-                background: white;
-                width: 30rem;
-                height: 100vh;
-                z-index: 5;
-                display: none;
-
-                transition: right 0.45s ease-out;
-            }
-
-            .c-carrito--deslizamientoIn {
-                right: 0;
-            }
-
-            .carrito-cabecera {
-                position: relative;
-                display: flex;
-                justify-content: center;
-                background-color: var(--color-primario);
-                color: #FFFFFF;
-                padding-inline: 2rem;
-                padding-block: 1.5rem;
-            }
-
-            .carrito-cabecera h2 {
-                font-size: var(--fuente-subtitulo);
-            }
-
-            .carrito-cabecera img {
-                position: absolute;
-                left: 20px;
-                top: 50%;
-                transform: translateY(-50%);
-                width: 15px;
-                height: 15px;
-                cursor: pointer;
-            }
-        </style>
 
         <div class="overlay" id="overlay"></div>
 
@@ -136,104 +73,27 @@
                 <h2>Carrito de compras</h2>
             </section>
             <section class="carrito-cuerpo">
-
+                <!-- Aquí se renderizan los productos añadidos -->
             </section>
             <section class="carrito-footer">
-                <span id="precio"></span>
+                <section class="linea-precio">
+                    <span>TOTAL . . . . . . . . . . . .</span>
+                    <span class="precio-dinamico">s/00.00</span>
+                </section>
+
+                <button class="btn-carrito-pedido">Realizar pedido</button>
             </section>
         </aside>
     </main>
-
-
-    <script>
-
-        
-        const capaTransparente = document.getElementById("overlay")
-        const contCarrito = document.getElementById("carrito")
-
-        function abrirCarrito() {
-            console.log("carrito presionado");
-
-            capaTransparente.style.display = "block"
-            contCarrito.style.display = "block"
-
-            setTimeout(() => {
-                capaTransparente.classList.add("overlay--aparecer");
-                contCarrito.classList.add("c-carrito--deslizamientoIn")
-            }, 10);
-        }
-        
-        function cerrarCarrito() {
-            capaTransparente.classList.remove("overlay--aparecer");
-            contCarrito.classList.remove("c-carrito--deslizamientoIn");
-
-            setTimeout(() => {
-                capaTransparente.style.display = "none";
-                contCarrito.style.display = "none";
-            }, 450);
-        }
-
-        function closeCar() {
-            cerrarCarrito()
-        }
-
-        capaTransparente.addEventListener("click", cerrarCarrito)
-
-
-
-        let productosCarrito = [];
-
-        function calcularPrecioTotal() {
-            // Calcular el precio total
-            const precioTotal = productosCarrito.reduce((total, producto) => {
-                return total + (producto.precio * producto.cantidad);
-            }, 0);
-
-            // Mostrar el precio total en el <span>
-            const spanPrecio = document.getElementById("precio");
-            if (spanPrecio) {
-                spanPrecio.textContent = `S/${precioTotal.toFixed(2)}`; // Formatear a 2 decimales
-            }
-        }
-
-        function agregarAlCarrito(boton) {
-            const nombre = boton.getAttribute("data-nombre");
-            const descripcion = boton.getAttribute("data-descripcion");
-            const precio = parseFloat(boton.getAttribute("data-precio"));
-            const link_img = boton.getAttribute("data-link_img");
-
-            const producto = {
-                nombre,
-                descripcion,
-                precio,
-                link_img,
-                cantidad: 1
-            };
-
-            const productoEnCarrito = productosCarrito.find(item => item.nombre === producto.nombre);
-
-            if (productoEnCarrito) {
-                // Si el producto ya está en el carrito, incrementar la cantidad
-                productoEnCarrito.cantidad += 1;
-                console.log("Cantidad actualizada:", productoEnCarrito);
-            } else {
-                // Si el producto no está en el carrito, agregarlo
-                productosCarrito.push(producto);
-                console.log("Producto agregado:", producto);
-            }
-
-            calcularPrecioTotal();
-
-            console.log("Carrito actual:", productosCarrito);
-        }
-
-    </script>
 
     <!-- Componentes -->
     <script type="module" src="./assets/js/renderHeader.js"></script>
     <script type="module" src="./assets/js/renderFooter.js"></script>
 
-    <script src="./assets/js/renderProductos.js" type="module"></script>
+    <script type="module" src="./assets/js/renderProductos.js"></script>
+    <script src="./assets/js/mostrarCarrito.js"></script>
+    <script src="./assets/js/carrito.js"></script>
+
 </body>
 
 </html>
